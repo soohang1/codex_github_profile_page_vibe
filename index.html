@@ -8,7 +8,7 @@
       name="description"
       content="문제를 구조화하고, 빠르게 검증하며, 사용자가 다시 찾는 웹 경험을 만드는 개발자 포트폴리오입니다."
     >
-    <meta name="theme-color" content="#f8faf9">
+    <meta name="theme-color" content="#fbfaf7">
 
     <meta property="og:type" content="website">
     <meta property="og:title" content="백은기 | 개발자 포트폴리오">
@@ -18,6 +18,7 @@
     >
     <meta property="og:image" content="./assets/og-image.png">
 
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
     <link rel="preload" as="image" href="./assets/hero-workspace.png">
     <link rel="stylesheet" href="./styles.css">
     <script src="./script.js" defer></script>
@@ -57,6 +58,8 @@
 
     <main id="main">
       <section class="hero" id="top" aria-labelledby="hero-title">
+        <img class="hero-bg" src="./assets/hero-workspace.png" alt="" aria-hidden="true">
+        <div class="hero-scrim" aria-hidden="true"></div>
         <div class="hero-inner">
           <div class="hero-copy">
             <p class="eyebrow">Frontend Developer Portfolio</p>
@@ -69,15 +72,6 @@
               <a class="button button-primary" href="#projects">프로젝트 보기</a>
               <a class="button button-secondary" href="https://github.com/soohang1">GitHub</a>
             </div>
-          </div>
-
-          <div class="hero-visual" aria-label="개발자 작업 공간 이미지">
-            <img
-              src="./assets/hero-workspace.png"
-              width="1536"
-              height="1024"
-              alt="노트북과 모니터가 놓인 밝은 개발자 작업 공간"
-            >
             <div class="availability" aria-label="현재 상태">
               <span class="status-dot" aria-hidden="true"></span>
               <span>새로운 제품 문제를 함께 풀 준비가 되어 있습니다</span>
@@ -236,7 +230,7 @@
             <h2 id="contact-title">함께 만들 제품 이야기를 기다립니다.</h2>
           </div>
           <div class="contact-actions">
-            <a class="button button-primary" href="mailto:hello@example.com">hello@example.com</a>
+            <a class="button button-primary" href="mailto:soohang1@naver.com">soohang1@naver.com</a>
             <a class="button button-secondary" href="https://www.linkedin.com/in/your-linkedin-id">
               LinkedIn
             </a>

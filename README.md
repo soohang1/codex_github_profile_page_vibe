@@ -11,12 +11,14 @@
 - `assets/og-image.png`: Open Graph 이미지
 - `.nojekyll`: GitHub Pages에서 Jekyll 처리를 건너뛰기 위한 파일
 
+폰트는 Pretendard Variable을 CDN으로 불러오며, 로딩이 실패하면 시스템 폰트로 표시됩니다.
+
 ## 교체할 샘플 값
 
 - 이름: `백은기`
 - GitHub: `https://github.com/soohang1`
 - LinkedIn: `https://www.linkedin.com/in/your-linkedin-id`
-- 이메일: `hello@example.com`
+- 이메일: `soohang1@naver.com`
 - 프로젝트 저장소 링크와 프로젝트 설명
 - `assets/hero-workspace.png`, `assets/og-image.png`
 
