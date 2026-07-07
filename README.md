@@ -11,7 +11,7 @@
 - `assets/og-image.png`: Open Graph 이미지
 - `.nojekyll`: GitHub Pages에서 Jekyll 처리를 건너뛰기 위한 파일
 
-폰트는 Pretendard Variable을 CDN으로 불러오며, 로딩이 실패하면 시스템 폰트로 표시됩니다.
+폰트는 Gowun Dodum과 Noto Sans KR을 Google Fonts로 불러오며, 로딩이 실패하면 시스템 한글 폰트로 표시됩니다.
 
 ## 교체할 샘플 값
 
