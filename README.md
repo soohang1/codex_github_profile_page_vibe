@@ -13,8 +13,8 @@
 
 ## 교체할 샘플 값
 
-- 이름: `김개발`
-- GitHub: `https://github.com/your-github-id`
+- 이름: `백은기`
+- GitHub: `https://github.com/soohang1`
 - LinkedIn: `https://www.linkedin.com/in/your-linkedin-id`
 - 이메일: `hello@example.com`
 - 프로젝트 저장소 링크와 프로젝트 설명
@@ -31,7 +31,7 @@ git init
 git branch -M main
 git add .
 git commit -m "Add portfolio site"
-git remote add origin https://github.com/<github-username>/<repo-name>.git
+git remote add origin https://github.com/soohang1/codex_github_profile_page_vibe.git
 git push -u origin main
 ```
 
@@ -40,5 +40,5 @@ GitHub 저장소의 `Settings` → `Pages`에서 `Deploy from a branch`, `main`,
 배포 URL 형식:
 
 ```text
-https://<github-username>.github.io/<repo-name>/
+https://soohang1.github.io/codex_github_profile_page_vibe/
 ```
