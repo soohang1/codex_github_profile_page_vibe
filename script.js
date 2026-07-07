@@ -2,6 +2,8 @@ const navToggle = document.querySelector("[data-nav-toggle]");
 const navMenu = document.querySelector("[data-nav-menu]");
 const navLinks = document.querySelectorAll("[data-nav-link]");
 const sections = document.querySelectorAll("section[id]");
+const anchorLinks = document.querySelectorAll('a[href^="#"]');
+const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
 function closeMenu() {
   navMenu?.classList.remove("is-open");
@@ -15,8 +17,22 @@ navToggle?.addEventListener("click", () => {
   navToggle.setAttribute("aria-label", isOpen ? "메뉴 닫기" : "메뉴 열기");
 });
 
-navLinks.forEach((link) => {
-  link.addEventListener("click", closeMenu);
+anchorLinks.forEach((link) => {
+  link.addEventListener("click", (event) => {
+    const hash = link.getAttribute("href");
+    if (!hash || hash === "#") return;
+
+    const target = document.querySelector(hash);
+    if (!target) return;
+
+    event.preventDefault();
+    target.scrollIntoView({
+      behavior: prefersReducedMotion.matches ? "auto" : "smooth",
+      block: "start",
+    });
+    history.pushState(null, "", hash);
+    closeMenu();
+  });
 });
 
 document.addEventListener("keydown", (event) => {

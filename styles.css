@@ -144,7 +144,7 @@ a:hover {
 }
 
 .hero {
-  min-height: calc(100svh - 70px);
+  min-height: min(760px, calc(92svh - 70px));
   padding: 64px 0 72px;
 }
 
@@ -297,7 +297,13 @@ h3 {
 }
 
 .section {
+  scroll-margin-top: 84px;
   padding: 96px 0;
+}
+
+.hero,
+.contact-section {
+  scroll-margin-top: 84px;
 }
 
 .section-muted {
