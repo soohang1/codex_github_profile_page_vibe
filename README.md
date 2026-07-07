@@ -17,7 +17,7 @@
 
 - 이름: `백은기`
 - GitHub: `https://github.com/soohang1`
-- LinkedIn: `https://www.linkedin.com/in/your-linkedin-id`
+- LinkedIn: `https://www.linkedin.com/in/eun-ki-baek-8201b21b6`
 - 이메일: `soohang1@naver.com`
 - 프로젝트 저장소 링크와 프로젝트 설명
 - `assets/hero-workspace.png`, `assets/og-image.png`
