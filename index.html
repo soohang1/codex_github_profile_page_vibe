@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>김개발 | 프론트엔드 개발자 포트폴리오</title>
+    <meta
+      name="description"
+      content="문제를 구조화하고, 빠르게 검증하며, 사용자가 다시 찾는 웹 경험을 만드는 개발자 포트폴리오입니다."
+    >
+    <meta name="theme-color" content="#f8faf9">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="김개발 | 개발자 포트폴리오">
+    <meta
+      property="og:description"
+      content="제품 감각과 구현력을 함께 다루는 프론트엔드 개발자 포트폴리오."
+    >
+    <meta property="og:image" content="./assets/og-image.png">
+
+    <link rel="preload" as="image" href="./assets/hero-workspace.png">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">본문으로 이동</a>
+
+    <header class="site-header" data-header>
+      <nav class="nav" aria-label="주요 메뉴">
+        <a class="brand" href="#top" aria-label="홈으로 이동">
+          <span class="brand-mark" aria-hidden="true">KD</span>
+          <span>김개발</span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+          aria-label="메뉴 열기"
+          data-nav-toggle
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
+
+        <div class="nav-menu" id="nav-menu" data-nav-menu>
+          <a href="#about" data-nav-link>소개</a>
+          <a href="#skills" data-nav-link>기술</a>
+          <a href="#projects" data-nav-link>프로젝트</a>
+          <a href="#experience" data-nav-link>경험</a>
+          <a href="#contact" data-nav-link>연락처</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow">Frontend Developer Portfolio</p>
+            <h1 id="hero-title">사용자의 흐름을 코드로 또렷하게 만드는 개발자</h1>
+            <p class="hero-lead">
+              복잡한 요구사항을 작게 나누고, 빠른 실험과 안정적인 구현으로 제품의
+              다음 단계를 만듭니다.
+            </p>
+            <div class="hero-actions" aria-label="주요 링크">
+              <a class="button button-primary" href="#projects">프로젝트 보기</a>
+              <a class="button button-secondary" href="https://github.com/your-github-id">GitHub</a>
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-label="개발자 작업 공간 이미지">
+            <img
+              src="./assets/hero-workspace.png"
+              width="1536"
+              height="1024"
+              alt="노트북과 모니터가 놓인 밝은 개발자 작업 공간"
+            >
+            <div class="availability" aria-label="현재 상태">
+              <span class="status-dot" aria-hidden="true"></span>
+              <span>새로운 제품 문제를 함께 풀 준비가 되어 있습니다</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-muted" id="about" aria-labelledby="about-title">
+        <div class="section-inner two-column">
+          <div>
+            <p class="section-kicker">About</p>
+            <h2 id="about-title">실행 가능한 답을 찾는 개발자입니다.</h2>
+          </div>
+          <div class="stacked-copy">
+            <p>
+              저는 화면을 예쁘게 만드는 것에서 멈추지 않고, 사용자가 어디서 망설이는지와
+              팀이 무엇을 빠르게 배워야 하는지를 함께 봅니다. 작은 UI 개선부터 데이터가
+              연결된 대시보드까지, 명확한 구조와 꾸준한 피드백 루프로 완성도를 올립니다.
+            </p>
+            <p>
+              최근에는 접근성, 성능, 디자인 시스템, API 연동 품질에 관심을 두고 있습니다.
+              이 사이트의 이름, 링크, 프로젝트 설명은 모두 샘플이며 실제 정보로 쉽게
+              교체할 수 있습니다.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="skills" aria-labelledby="skills-title">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="section-kicker">Skills</p>
+            <h2 id="skills-title">제품을 만들 때 자주 쓰는 도구들</h2>
+          </div>
+
+          <div class="skill-grid">
+            <article class="skill-card">
+              <h3>Frontend</h3>
+              <p>HTML, CSS, JavaScript, TypeScript, React, 상태 관리, 반응형 UI</p>
+            </article>
+            <article class="skill-card">
+              <h3>Product UI</h3>
+              <p>접근성, 디자인 시스템, 폼 UX, 데이터 테이블, 인터랙션 설계</p>
+            </article>
+            <article class="skill-card">
+              <h3>Engineering</h3>
+              <p>Git, REST API, 테스트 전략, 성능 개선, 배포 자동화, 문서화</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-muted" id="projects" aria-labelledby="projects-title">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="section-kicker">Projects</p>
+            <h2 id="projects-title">대표 프로젝트</h2>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card">
+              <div class="project-meta">
+                <span>Dashboard</span>
+                <span>2026</span>
+              </div>
+              <h3>운영 지표 대시보드</h3>
+              <p>
+                여러 API에서 들어오는 지표를 한 화면에서 비교할 수 있도록 필터,
+                표, 차트의 상태 흐름을 정리한 샘플 프로젝트입니다.
+              </p>
+              <ul class="tag-list" aria-label="사용 기술">
+                <li>React</li>
+                <li>TypeScript</li>
+                <li>Chart</li>
+              </ul>
+              <a href="https://github.com/your-github-id/dashboard-project">저장소 보기</a>
+            </article>
+
+            <article class="project-card">
+              <div class="project-meta">
+                <span>Workflow</span>
+                <span>2025</span>
+              </div>
+              <h3>업무 자동화 도구</h3>
+              <p>
+                반복 입력과 검수 과정을 줄이기 위해 파일 업로드, 검증 결과,
+                다운로드 흐름을 단순화한 내부 도구 콘셉트입니다.
+              </p>
+              <ul class="tag-list" aria-label="사용 기술">
+                <li>JavaScript</li>
+                <li>API</li>
+                <li>UX</li>
+              </ul>
+              <a href="https://github.com/your-github-id/automation-tool">저장소 보기</a>
+            </article>
+
+            <article class="project-card">
+              <div class="project-meta">
+                <span>Web App</span>
+                <span>2024</span>
+              </div>
+              <h3>개인 학습 기록 앱</h3>
+              <p>
+                학습 로그를 주제별로 정리하고 회고를 남길 수 있는 정적 웹 앱입니다.
+                작은 기능을 끝까지 다듬는 연습을 보여주는 샘플입니다.
+              </p>
+              <ul class="tag-list" aria-label="사용 기술">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>LocalStorage</li>
+              </ul>
+              <a href="https://github.com/your-github-id/learning-log">저장소 보기</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="experience" aria-labelledby="experience-title">
+        <div class="section-inner two-column">
+          <div>
+            <p class="section-kicker">Experience</p>
+            <h2 id="experience-title">일하는 방식</h2>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline-item">
+              <span>01</span>
+              <div>
+                <h3>문제를 먼저 작게 정의합니다</h3>
+                <p>기능 목록보다 사용자의 실제 흐름과 실패 지점을 먼저 정리합니다.</p>
+              </div>
+            </article>
+            <article class="timeline-item">
+              <span>02</span>
+              <div>
+                <h3>빠르게 만들고 검증합니다</h3>
+                <p>초기 구현은 단순하게 가져가고, 피드백이 모이는 지점에 힘을 씁니다.</p>
+              </div>
+            </article>
+            <article class="timeline-item">
+              <span>03</span>
+              <div>
+                <h3>다음 사람이 읽을 수 있게 남깁니다</h3>
+                <p>컴포넌트 경계, 예외 처리, 문서화를 통해 유지보수 비용을 낮춥니다.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="contact-inner">
+          <div>
+            <p class="section-kicker">Contact</p>
+            <h2 id="contact-title">함께 만들 제품 이야기를 기다립니다.</h2>
+          </div>
+          <div class="contact-actions">
+            <a class="button button-primary" href="mailto:hello@example.com">hello@example.com</a>
+            <a class="button button-secondary" href="https://www.linkedin.com/in/your-linkedin-id">
+              LinkedIn
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 김개발. Built for GitHub Pages.</p>
+      <a href="#top">맨 위로</a>
+    </footer>
+  </body>
+</html>
